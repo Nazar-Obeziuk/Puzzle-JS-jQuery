@@ -1,0 +1,305 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timer-clock {
+    font-size: 64px;
+    color: rgb(62, 62, 62);
+}
+
+.settings-game {
+    margin-top: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.button {
+    width: 142px;
+    height: 34px;
+    border: none;
+    background: red;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: rgb(222, 41, 41);
+}
+.button:focus {
+  background-color: rgb(224, 4, 4);
+  box-shadow: 0 0 3px 0 rgb(224, 4, 4);
+  border: none;
+}
+.button:disabled {
+  background-color: rgb(230, 111, 111);
+  border: none;
+}
+
+.play-container {
+    margin-top: 50px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sorted-block {
+    border-radius: 4px;
+    background: rgb(239, 239, 239);
+    box-shadow: 0 0 10px black;
+}
+
+#puzzle-box {
+    width: 300px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.puzzle-wrapper, .puzzle {
+    width: 75px;
+    height: 90px;
+}
+
+.puzzle[value="1"] {
+    background-position: 0 0;
+}
+
+.puzzle[value="2"] {
+    background-position: -75px 0;
+}
+
+.puzzle[value="3"] {
+    background-position: -150px 0;
+}
+
+.puzzle[value="4"] {
+    background-position: -225px 0;
+}
+
+.puzzle[value="5"] {
+    background-position: 0 -90px;
+}
+
+.puzzle[value="6"] {
+    background-position: -75px -90px;
+}
+
+.puzzle[value="7"] {
+    background-position: -150px -90px;
+}
+
+.puzzle[value="8"] {
+    background-position: -225px -90px;
+}
+
+.puzzle[value="9"] {
+    background-position: 0 -180px;
+}
+
+.puzzle[value="10"] {
+    background-position: -75px -180px;
+}
+
+.puzzle[value="11"] {
+    background-position: -150px -180px;
+}
+
+.puzzle[value="12"] {
+    background-position: -225px -180px;
+}
+
+.puzzle[value="13"] {
+    background-position: 0 -270px;
+}
+
+.puzzle[value="14"] {
+    background-position: -75px -270px;
+}
+
+.puzzle[value="15"] {
+    background-position: -150px -270px;
+}
+
+.puzzle[value="16"] {
+    background-position: -225px -270px;
+}
+
+.collected-block {
+    border-radius: 4px;
+    background: rgb(175, 186, 186);
+    box-shadow: 0 0 10px black;
+}
+
+.time-popup {
+    width: 640px;
+    height: 240px;
+    background: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.popup-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.time-popup-text {
+    color: rgb(62, 62, 62);
+}
+
+.popup-clock {
+    font-size: 32px;
+    color: rgb(62, 62, 62);
+}
+
+.popup-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+#close {
+    width: 80px;
+    height: 34px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#check-popup {
+    width: 80px;
+    height: 34px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.done-popup {
+    width: 640px;
+    height: 240px;
+    background: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.done-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.done-popup-text {
+    color: rgb(62, 62, 62);
+}
+
+.done-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+#close-done {
+    width: 80px;
+    height: 34px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pity-popup {
+    width: 640px;
+    height: 240px;
+    background: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.pity-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.pity-popup-text {
+    color: rgb(62, 62, 62);
+}
+
+.pity-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+#close-pity {
+    width: 80px;
+    height: 34px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hidden {
+    display: block;
+}

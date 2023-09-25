@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="timer">
+            <div class="timer-clock">01:00</div>
+        </div>
+        <div class="settings-game">
+            <input type="submit" id="start" class="button" value="Start game!">
+            <input type="submit" id="check" class="button" value="Check result">
+            <input type="submit" id="new" class="button" value="New game">
+        </div>
+        <div class="play-container">
+            <div class="sorted-block" id="puzzle-box">
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+                <div class="puzzle-wrapper"><div class="puzzle"></div></div>
+            </div>
+            <div class="collected-block" id="puzzle-box">
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+                <div class="puzzle-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modals -->
+
+    <div class="time-popup">
+        <div class="popup-text-wrapper">
+            <h1 class="time-popup-text">You still have time, you sure?</h1>
+            <h1 class="popup-clock timer-clock">01:00</h1>
+        </div>
+        <div class="popup-button-wrapper">
+            <input type="submit" id="close" class="popup-button" value="Close">
+            <input type="submit" id="check-popup" class="popup-button" value="Check">
+        </div>
+    </div>
+
+    <div class="done-popup">
+        <div class="done-text-wrapper">
+            <h1 class="done-popup-text">Woohoo, well done, you did it!</h1>
+        </div>
+        <div class="done-button-wrapper">
+            <input type="submit" id="close-done" class="popup-button" value="Close">
+        </div>
+    </div>
+
+    <div class="pity-popup">
+        <div class="pity-text-wrapper">
+            <h1 class="pity-popup-text">It's a pity, but you lost</h1>
+        </div>
+        <div class="pity-button-wrapper">
+            <input type="submit" id="close-pity" class="pity-button" value="Close">
+        </div>
+    </div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
